@@ -10,7 +10,7 @@ var __privateAdd = (obj, member, value) => member.has(obj) ? __typeError("Cannot
 var __privateSet = (obj, member, value, setter) => (__accessCheck(obj, member, "write to private field"), setter ? setter.call(obj, value) : member.set(obj, value), value);
 var __privateMethod = (obj, member, method) => (__accessCheck(obj, member, "access private method"), method);
 var _t2, _qt_instances, e_fn, _re_instances, t_fn, e_fn2, s_fn, i_fn, r_fn, o_fn, _t3, _t4, _e, _s, _he_instances, t_fn2, _t5, _e2, _s2, _ce_instances, i_fn2, _t6, _e3, _s3, _le_instances, i_fn3, _r, _t7, _e4, _s4, _i, _t8, _e5, _s5, _i2, _r2, _o, _t9, _e6, _s6, _me_instances, i_fn4, _t10, _e7, _s7, _t11, _e8, _s8, _i3, _t12, _e9, _s9, _i4, _r3, _o2, _n, _a, _be_instances, h_fn, c_fn, _t13, _e10, _s10, _i5, _r4, _o3, _n2, _xe_instances, a_fn, h_fn2, c_fn2, l_fn, d_fn, u_fn, _t14, _t15, _e11, _s11, _i6, _Pe_instances, r_fn2, o_fn2, n_fn, a_fn2;
-import { E as at, C as ht, M as ct, Q as lt, V as dt, G as ut, a as X, R as pt, A as mt, D as Y, P as gt, b as ft, T as yt, c as p, d as I, e as wt, f as C, g as bt, h as xt, i as vt, j as J, k as Pt, l as Rt, u as b, m as St, I as Lt, n as Tt, o as kt, L as Mt, p as Wt, H as Ft, q as Ct, S as It, r as Vt, s as jt, t as At, v as Bt, w as Et, x as Dt, y as Gt } from "./index-ARjM7dt8.js";
+import { E as at, C as ht, M as ct, Q as lt, V as dt, G as ut, a as X, R as pt, A as mt, D as Y, P as gt, b as ft, T as yt, c as p, d as I, e as wt, f as C, g as bt, h as xt, i as vt, j as J, k as Pt, l as Rt, u as b, m as St, I as Lt, n as Tt, o as kt, L as Mt, p as Wt, H as Ft, q as Ct, S as It, r as Vt, s as jt, t as Bt, v as At, w as Et, x as Dt, y as Gt } from "./index-Dqq_ARyK.js";
 class Ot extends at {
   constructor(t, e = {}) {
     const s = e.font;
@@ -100,11 +100,11 @@ const Qt = (a) => {
   for (let s = 0; s < t.length; s += 3) t[s] *= a.scale.x, t[s + 1] *= a.scale.y, t[s + 2] *= a.scale.z;
   const e = [...a.geometry.index.array];
   return new yt(t, e);
-}, j = new p(), A = new p(), B = new p();
+}, j = new p(), B = new p(), A = new p();
 function Xt(a, t, e, s, o) {
   if (o.lengthSquared() > 1.1) return 0;
-  a.getVelocityAtWorldPoint(t, j), e.getVelocityAtWorldPoint(s, A), j.vsub(A, B);
-  const i = o.dot(B), r = 1 / (a.invMass + e.invMass);
+  a.getVelocityAtWorldPoint(t, j), e.getVelocityAtWorldPoint(s, B), j.vsub(B, A);
+  const i = o.dot(A), r = 1 / (a.invMass + e.invMass);
   return -0.2 * i * r;
 }
 const F = new p(), E = new p(), D = new p(), G = new p();
@@ -573,7 +573,7 @@ class pe extends C {
       const o = e * (t ? __privateGet(this, _s5) : __privateGet(this, _r2));
       __privateSet(this, _t8, Z(__privateGet(this, _t8), s, o));
     }
-    this.object.rotation.z = -this.steering * 4;
+    this.object.rotation.z = -this.steering * 8;
   }
 }
 _t8 = new WeakMap();
@@ -793,7 +793,7 @@ h_fn = function(t) {
 c_fn = function(t) {
   if (t < 0) return 0;
   const e = t / __privateGet(this, _r3);
-  return e > 0.86 && __privateGet(this, _s9) < __privateGet(this, _o2) ? 1 : e < 0.63 && __privateGet(this, _s9) > 0 ? -1 : 0;
+  return e > 0.84 && __privateGet(this, _s9) < __privateGet(this, _o2) ? 1 : e < 0.62 && __privateGet(this, _s9) > 0 ? -1 : 0;
 };
 const U = [[0, 0], [580, 13.0060215396118], [1e3, 23.5604323757565], [1160, 28.2864869839221], [1305, 32.8895788321188], [1500, 39.6382842845279], [1740, 47.4250708425936], [2e3, 56.8299322742528], [2175, 64.181389983154], [2320, 70.8494504360881], [2500, 79.9695002227479], [2610, 86.1907006817735], [2755, 95.0981930735709], [2900, 104.900235195471], [3e3, 112.236978173889], [3200, 129.171738252815], [3335, 142.032348446473], [3625, 172.80910317321], [4060, 223.661024547093], [4785, 323.062319717673], [5e3, 357.335514583025], [5220, 387.224662284407], [5365, 408.903821321368], [5500, 430.661883643152], [5800, 472.827428482247], [6e3, 504.210793456098], [6380, 551.304693200133], [6500, 567.432736626172], [7e3, 626.304801670147], [7500, 679.98807038473], [8500, 775.723232925738], [9e3, 815.985684461676], [9750, 872.35311661199], [1e4, 888.756337608112], [10250, 898.74739039666], [10295, 899.045493587832], [10440, 899.789132120489], [10500, 900], [10585, 899.343018192663], [10730, 897.927873546078], [10750, 897.703549060544], [10875, 895.168505815687], [11e3, 892.335222189084], [11165, 885.940918580376], [11310, 879.83906949001], [11500, 871.160155084998], [11890, 839.853146436028], [12325, 800.224425887265], [12500, 782.881002087683], [13500, 660.304205189383], [14e3, 576.200417536534], [14500, 510.289293170296]], _ = [[0, 151.688043969153], [290, 155.367449656772], [435, 157.4177474891], [580, 159.672239128674], [725, 162.175078377098], [870, 164.970572230684], [1e3, 167.763004918538], [1160, 173.633678064081], [1305, 179.457139401983], [1500, 188.163996747652], [1595, 190.322674727229], [1740, 194.075931911226], [1885, 198.424823106667], [2e3, 202.329907524448], [2030, 203.586805207898], [2175, 210.117776965366], [2320, 217.451016010386], [2500, 227.770415164482], [2610, 235.143427441804], [2755, 245.789656233683], [2900, 257.567702587172], [3e3, 266.39597017474], [3200, 287.428921801932], [3335, 303.252486096619], [3500, 324.533735032506], [3625, 339.446664595429], [3770, 358.193858639006], [4060, 392.262883624218], [4500, 449.131021987678], [4640, 463.897935242766], [4785, 480.747799735099], [4930, 499.291539763727], [5e3, 508.884376436538], [5075, 515.125559102838], [5220, 528.208574470989], [5365, 542.705700148419], [5500, 557.553679611329], [5655, 568.840072009616], [5800, 580.480464354719], [6e3, 598.375533984936], [6090, 601.98307606494], [6235, 608.308185507502], [6380, 615.295800678374], [6500, 621.604244499287], [6670, 626.423998253295], [6815, 630.889186290787], [7e3, 637.089784670445], [7500, 645.584315132717], [8500, 649.831580363853], [9e3, 645.584315132717], [9500, 639.213417286012], [9750, 637.089784670445], [1e4, 632.842519439309], [10250, 624.347988977036], [10500, 610.332013714286], [10750, 594.617132359082], [11e3, 577.628071434536], [11500, 539.40268435431], [12500, 445.962849269311], [13e3, 394.995666495676], [13500, 348.275748953176], [14e3, 293.061300948405], [14500, 250.588648637041]];
 class xe extends J {
@@ -822,15 +822,15 @@ class xe extends J {
     __privateAdd(this, _n2);
     __publicField(this, "lastCallTime", 0);
     this.id = crypto.randomUUID(), __privateSet(this, _i5, new p(0, 0, -1)), __privateSet(this, _r4, new p()), __privateSet(this, _o3, new p(0, 1, 0)), __privateSet(this, _n2, new p(0, 0, 0)), this.resetRequested = false, this.input = s, __privateSet(this, _t13, []), __privateSet(this, _e10, []), this.headRotation = 0;
-    const n = U.map(([, w]) => w), i = Math.max(...n), r = _.map(([w]) => w);
-    this.maxRPM = Math.max(...r);
-    const h = 420;
-    this.sound = e, this.options = { mass: 820, brake: 520, downforceFactor: 1.9 };
-    const c = { autoShift: true, torqueCurve: _, gears: [12.6854, 10.5019, 9.2765, 7.8192, 6.912, 5.4398, 4.6541, 4.1045], maxRPM: this.maxRPM };
+    const n = U.map(([, w]) => w), i = Math.max(...n) * 0.7, r = _.map(([w]) => w);
+    this.maxRPM = Math.max(...r), console.log(this.maxRPM);
+    const h = 480;
+    this.sound = e, this.options = { mass: 820, brake: 380, downforceFactor: 1.9 };
+    const c = { autoShift: true, torqueCurve: _, gears: [16.4823, 14.4375, 12.6854, 10.5019, 9.2765, 7.8192, 6.912, 5.4398, 4.6541, 4.1045], maxRPM: this.maxRPM };
     this.transmission = new be(c);
     const d = { powerCurve: U, maxRPM: this.maxRPM, topSpeed: h, power: i };
     this.engine = new we(d);
-    const l = { rotationRange: 0.32, autoCenterFactor: 6, autoCenter: true, speedFactor: 1.4, maxRPM: this.maxRPM }, u = this.getPart("SteeringWheel"), m = new fe();
+    const l = { rotationRange: 0.32, autoCenterFactor: 6, autoCenter: true, speedFactor: 1.6, maxRPM: this.maxRPM }, u = this.getPart("SteeringWheel"), m = new fe();
     this.steeringWheel = new me(u, m, o, l), this.steeringWheel.textBEST.setText("--:--.---"), this.steeringWheel.textPOS.setText("P1");
     const f = this.getPart("BodyEngine");
     f.add(e.engine, e.turbo, e.crash), this.helmet = this.getPart("Helmet"), this.helmet.add(e.wind), this.object.add(this.helmet), this.object.add(this.sound.gearup), this.cameras = [this.getPart("BodyCamera"), this.getPart("HelmetCamera")], this.cameras[1].position.y += 0.04, this.cameras[1].position.z -= 0.03;
@@ -916,7 +916,7 @@ l_fn = function(t) {
   const e = t ? 8800 : this.input.throttle, s = this.engine.power * e;
   this.chassis.applyEngineForce(-s, 2), this.chassis.applyEngineForce(-s, 3);
   const o = this.options.brake * this.input.brake;
-  this.chassis.setBrake(o, 2), this.chassis.setBrake(o, 3);
+  this.chassis.setBrake(o * 0.56, 0), this.chassis.setBrake(o * 0.56, 1), this.chassis.setBrake(o * 0.44, 2), this.chassis.setBrake(o * 0.44, 3);
 };
 d_fn = function() {
   this.resetRequested || (this.resetRequested = true, this.emit("reset", true));
@@ -1120,7 +1120,7 @@ let Q = class extends HTMLElement {
       };
       e();
     });
-    this.stats = new k(), this.http = b(Ft), this.storage = b(Ct), this.shortcut = b(It), this.loader = b(Vt), this.history = b(jt), this.composer = b(At), this.strategy = b(Bt), this.audioListener = b(Et), this.world = b(Dt), this.ounah = new Audio("sounds/effects/ounah.mp3"), this.ounah.load(), this.redbull = new Audio("sounds/effects/red-bull-racing.wav"), this.redbull.load(), this.circuit = null, this.vehicle = null;
+    this.stats = new k(), this.http = b(Ft), this.storage = b(Ct), this.shortcut = b(It), this.loader = b(Vt), this.history = b(jt), this.composer = b(Bt), this.strategy = b(At), this.audioListener = b(Et), this.world = b(Dt), this.ounah = new Audio("sounds/effects/ounah.mp3"), this.ounah.load(), this.redbull = new Audio("sounds/effects/red-bull-racing.wav"), this.redbull.load(), this.circuit = null, this.vehicle = null;
   }
   async connectedCallback() {
     const a = new St("S to start", 420), t = new Lt("images/cockpit-white.webp", 1e4, 1e3);
@@ -1156,7 +1156,7 @@ let Q = class extends HTMLElement {
     this.composer.camera !== a && (this.audioListener.removeFromParent(), a.add(this.audioListener), this.composer.setCamera(a));
   }
   async loadVehicle(a, t, e) {
-    const s = await this.loader.loadModel(`vehicles/${a}/${t}.glb`), o = await this.loader.loadPositionalAudios([`sounds/${a}/high-on.wav`, `sounds/${a}/turbo.wav`, `sounds/${a}/wind.wav`, `sounds/${a}/skid.wav`, `sounds/${a}/kerb.wav`, `sounds/${a}/work.wav`, `sounds/${a}/crash.wav`, `sounds/${a}/traction.wav`, `sounds/${a}/gearup.wav`]), [n, i, r, h, c, d, l, u, m] = o, f = new ue({ engine: n, gearup: m, crash: l, traction: u, turbo: i, wind: r, work: d, skid: h, kerb: c }, 12500, 420), y = await this.loader.loadFont("fonts/righteous-regular.json");
+    const s = await this.loader.loadModel(`vehicles/${a}/${t}.glb`), o = await this.loader.loadPositionalAudios([`sounds/${a}/high-on.wav`, `sounds/${a}/turbo.wav`, `sounds/${a}/wind.wav`, `sounds/${a}/skid.wav`, `sounds/${a}/kerb.wav`, `sounds/${a}/work.wav`, `sounds/${a}/crash.wav`, `sounds/${a}/traction.wav`, `sounds/${a}/gearup.wav`]), [n, i, r, h, c, d, l, u, m] = o, f = new ue({ engine: n, gearup: m, crash: l, traction: u, turbo: i, wind: r, work: d, skid: h, kerb: c }, 14500, 480), y = await this.loader.loadFont("fonts/righteous-regular.json");
     return new xe(s.scene, f, e, y);
   }
   async loadCircuit(a, t, e) {
