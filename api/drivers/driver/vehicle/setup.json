@@ -1,0 +1,41 @@
+{
+  "brake": {
+    "pressure": 92,
+    "bias": 54
+  },
+
+  "suspension": {
+    "spring": 720,
+    "damping": {
+      "compression": 4.4,
+      "rebound": 2.8
+    },
+    "rideHeight": 0.25
+  },
+
+  "aero": {
+    "frontWing": 3,
+    "rearWing": 4
+  },
+
+  "differential": {
+    "power": 60,
+    "coast": 40
+  },
+
+  "steering": {
+    "ratio": 14
+  },
+
+  "powerUnit": {
+    "engineMap": 3,
+    "ersBalance": 55
+  },
+
+  "tyres": {
+    "pressure": {
+      "front": 21.5,
+      "rear": 20.0
+    }
+  }
+}

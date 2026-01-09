@@ -1,0 +1,140 @@
+{
+  "airBox": {
+    "left": null,
+    "right": null
+  },
+
+  "bargerboard": {
+    "left": null,
+    "right": null
+  },
+
+  "body": {
+    "big": {
+      "left": null,
+      "right": null
+    },
+
+    "center": {
+      "left": null,
+      "right": null
+    },
+
+    "ear": {
+      "left": null,
+      "right": null
+    },
+
+    "egg": {
+      "left": null,
+      "right": null
+    },
+
+    "front": {
+      "left": null,
+      "right": null
+    },
+
+    "skirt": {
+      "left": {
+        "1": null,
+        "2": null,
+        "3": null,
+        "4": null
+      },
+
+      "right": {
+        "1": null,
+        "2": null,
+        "3": null,
+        "4": null
+      }
+    },
+
+    "top": {
+      "left": null,
+      "right": null
+    }
+  },
+
+  "halo": {
+    "foot": {
+      "left": null,
+      "right": null
+    },
+
+    "top": {
+      "center": null,
+      "front": null,
+      "left": null,
+      "right": null,
+      "inside": null
+    }
+  },
+
+  "mirror": {
+    "left": null,
+    "right": null
+  },
+
+  "nose": {
+    "left": {
+      "1": null,
+      "2": null
+    },
+
+    "right": {
+      "1": null,
+      "2": null
+    },
+
+    "top": {
+      "1": null,
+      "2": null,
+      "3": null,
+      "4": null,
+      "5": null,
+      "6": null
+    }
+  },
+
+  "shoulder": {
+    "left": null,
+    "right": null
+  },
+
+  "wing": {
+    "front": {
+      "left": {
+        "1": null,
+        "2": null,
+        "in": null,
+        "out": null
+      },
+
+      "right": {
+        "1": null,
+        "2": null,
+        "in": null,
+        "out": null
+      }
+    },
+
+    "rear": {
+      "left": {
+        "1": null,
+        "2": null
+      },
+
+      "right": {
+        "1": null,
+        "2": null
+      },
+
+      "top": {
+        "left": null,
+        "right": null
+      }
+    }
+  }
+}

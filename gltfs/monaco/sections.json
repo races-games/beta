@@ -1,0 +1,86 @@
+[
+  {
+    "in": 0.05,
+    "out": 0.08,
+    "isTunnel": false,
+    "text": "Saint Devote"
+  },
+  {
+    "in": 0.144,
+    "out": 0.18,
+    "isTunnel": false,
+    "text": "Beau Rivage"
+  },
+  {
+    "in": 0.206,
+    "out": 0.254,
+    "isTunnel": false,
+    "text": "Massenet"
+  },
+  {
+    "in": 0.265,
+    "out": 0.295,
+    "isTunnel": false,
+    "text": "Casino"
+  },
+  {
+    "in": 0.334,
+    "out": 0.363,
+    "isTunnel": false,
+    "text": "Mirabeau Haute"
+  },
+  {
+    "in": 0.375,
+    "out": 0.4,
+    "isTunnel": false,
+    "text": "Grand Hotel"
+  },
+  {
+    "in": 0.404,
+    "out": 0.421,
+    "isTunnel": false,
+    "text": "Mirabeau Bas"
+  },
+  {
+    "in": 0.43,
+    "out": 0.444,
+    "isTunnel": false,
+    "text": "Portier"
+  },
+  {
+    "in": 0.46,
+    "out": 0.57,
+    "isTunnel": true,
+    "text": "Tunnel"
+  },
+  {
+    "in": 0.625,
+    "out": 0.657,
+    "isTunnel": false,
+    "text": "Chicane"
+  },
+  {
+    "in": 0.709,
+    "out": 0.747,
+    "isTunnel": false,
+    "text": "Tabac"
+  },
+  {
+    "in": 0.769,
+    "out": 0.833,
+    "isTunnel": false,
+    "text": "Piscine"
+  },
+  {
+    "in": 0.868,
+    "out": 0.895,
+    "isTunnel": false,
+    "text": "La Rascasse"
+  },
+  {
+    "in": 0.905,
+    "out": 0.921,
+    "isTunnel": false,
+    "text": "Anthony Noges"
+  }
+]
