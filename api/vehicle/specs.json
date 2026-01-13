@@ -14,7 +14,7 @@
       "idle": 466,
       "max": 15300
     },
-    "power": 230
+    "power": 180
   },
   "brake": {
     "maxForce": 220,
@@ -23,7 +23,7 @@
   },
   "steeringWheel": {
     "rotationCenterSpeed": 6,
-    "rotationLowSpeed": 0.9,
+    "rotationLowSpeed": 1.1,
     "rotationHighSpeed": 0.1,
     "rotationLimit": 0.64
   },
@@ -37,7 +37,7 @@
     "dampingCompression": 4.2,
     "dampingRelaxation": 3.4,
     "rollInfluence": 0.8,
-    "frictionSlip": 2.2
+    "frictionSlip": 2.6
   },
   "tyre": {
     "friction": 2.5
