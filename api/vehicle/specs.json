@@ -1,23 +1,23 @@
 {
-  "weight": 800,
-  "maxSpeed": 320,
+  "weight": 840,
+  "maxSpeed": 280,
   "downforce": 0.82,
   "transmission": {
     "shift": {
       "up": 13200,
       "down": 8600
     },
-    "gears": [16.4, 14.8, 13.2, 11.4, 9.6, 8.4, 6.8, 5.2, 1.4]
+    "gears": [16.4, 14.8, 13.2, 11.4, 9.6, 8.4, 6.8, 4.8, 1.2]
   },
   "engine": {
     "rpm": {
       "idle": 466,
       "max": 15300
     },
-    "power": 160
+    "power": 220
   },
   "brake": {
-    "maxForce": 220,
+    "maxForce": 260,
     "pressure": 95,
     "bias": 55
   },
@@ -30,14 +30,14 @@
   "suspension": {
     "useCustomSlidingRotationalSpeed": true,
     "customSlidingRotationalSpeed": -30,
-    "maxSuspensionForce": 160000,
+    "maxSuspensionForce": 180000,
     "suspensionRestLength": 0.035,
     "maxSuspensionTravel": 0.05,
-    "suspensionStiffness": 1080,
+    "suspensionStiffness": 1280,
     "dampingCompression": 4.2,
     "dampingRelaxation": 3.4,
     "rollInfluence": 0.8,
-    "frictionSlip": 2.6
+    "frictionSlip": 1.4
   },
   "tyre": {
     "friction": 2.5

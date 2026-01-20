@@ -2,14 +2,16 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8" />
+  <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/icon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Formula | Races Games</title>
 
-  <meta name="description" content="Races Games é um simulador de corrida com gráficos 3D de alta qualidade feito para web." />
-  <meta name="keywords" content="F1 game, Formula 1, WebGL, Three.js, Simulador de Corrida, Jogo de Browser, Física Realista, 3D Racing" />
+  <meta name="description"
+    content="Races Games é um simulador de corrida com gráficos 3D de alta qualidade feito para web." />
+  <meta name="keywords"
+    content="F1 game, Formula 1, WebGL, Three.js, Simulador de Corrida, Jogo de Browser, Física Realista, 3D Racing" />
   <meta name="author" content="Guilherme Siquinelli @ Races Games" />
   <meta name="robots" content="index, follow" />
 
@@ -38,6 +40,90 @@
   <link rel="stylesheet" href="styles/progress-linear.css">
   <link rel="stylesheet" href="styles/progress-circular.css">
   <link rel="stylesheet" href="styles/tooltip.css">
+  <style>
+    /* Container "Stealth" */
+        .hud-controls {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            
+            /* Fundo preto puro com leve transparência */
+            background-color: rgba(0, 0, 0, 0.85);
+            
+            /* Borda fina cinza para definição */
+            border: 1px solid #333;
+            border-radius: 4px;
+            
+            padding: 15px;
+            width: 200px;
+            
+            font-family: 'Courier New', Courier, monospace; /* Fonte técnica */
+            color: #ccc; /* Cinza claro para o texto não cansar a vista */
+            font-size: 13px;
+            
+            z-index: 1000;
+            user-select: none;
+            pointer-events: none;
+        }
+
+        /* Título */
+        .hud-header {
+            border-bottom: 1px solid #333;
+            padding-bottom: 8px;
+            margin-bottom: 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #fff;
+            text-align: center;
+        }
+
+        /* Lista */
+        .hud-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .hud-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        /* Estilo da Tecla - High Contrast */
+        kbd {
+            background-color: #1a1a1a; /* Cinza muito escuro */
+            border: 1px solid #666;    /* Borda cinza média */
+            border-radius: 3px;
+            
+            color: #fff; /* Letra branca pura */
+            font-family: inherit;
+            font-weight: bold;
+            font-size: 12px;
+            
+            padding: 2px 8px;
+            min-width: 20px;
+            text-align: center;
+            
+            /* Sombra sólida (sem blur) para visual "flat" */
+            box-shadow: 2px 2px 0px #000; 
+        }
+
+        /* Ajuste para barra de espaço */
+        kbd.wide {
+            min-width: 60px;
+        }
+
+        /* Efeito visual quando o jogador pressiona (opcional, via JS depois) */
+        kbd:active {
+            transform: translate(2px, 2px);
+            box-shadow: none;
+        }
+  </style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -65,9 +151,9 @@
   <!-- this should be on top of your HTML <head> scripts -->
   <!-- needed to load built-in custom elements on safari -->
   <script src="//unpkg.com/@ungap/custom-elements"></script>
-  <script type="module" crossorigin src="/assets/index-2S9h7gdM.js"></script>
+  <script type="module" crossorigin src="/assets/index-BDTIVdXw.js"></script>
   <link rel="stylesheet" crossorigin href="/assets/index-Cqc2zMMy.css">
-      <!-- Google Tag Manager -->
+  <!-- Google Tag Manager -->
   <script>(function (w, d, s, l, i) {
       w[l] = w[l] || []; w[l].push({
         'gtm.start':
@@ -80,6 +166,9 @@
 </head>
 
 <body>
+  <section style="position: fixed; top: 0px; right: 0px;">
+    <img src="/svgs/controls.svg" width="220">
+  </section>
   <!-- needed to load font use in steering wheel defcal -->
   <span style="visibility: hidden; position: fixed">.</span>
   <!-- Google tag (gtag.js) -->
@@ -91,9 +180,10 @@
 
     gtag('config', 'G-FYY3EY8Z1K');
   </script>
-  
+
   <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PTKZCFJB" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PTKZCFJB" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 </body>
 
