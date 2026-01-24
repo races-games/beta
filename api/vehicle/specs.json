@@ -37,7 +37,7 @@
     "dampingCompression": 4.2,
     "dampingRelaxation": 3.4,
     "rollInfluence": 0.8,
-    "frictionSlip": 1.4
+    "frictionSlip": 1.35
   },
   "tyre": {
     "friction": 2.5
