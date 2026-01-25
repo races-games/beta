@@ -25,7 +25,7 @@
     "rotationCenterSpeed": 6,
     "rotationLowSpeed": 1.1,
     "rotationHighSpeed": 0.1,
-    "rotationLimit": 0.64
+    "rotationLimit": 0.55
   },
   "suspension": {
     "useCustomSlidingRotationalSpeed": true,
