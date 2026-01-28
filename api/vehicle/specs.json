@@ -22,10 +22,10 @@
     "bias": 55
   },
   "steeringWheel": {
-    "rotationCenterSpeed": 6,
-    "rotationLowSpeed": 1.1,
-    "rotationHighSpeed": 0.1,
-    "rotationLimit": 0.55
+    "rotationCenterSpeed": 4,
+    "rotationLowSpeed": 1.2,
+    "rotationHighSpeed": 0.3,
+    "rotationLimit": 0.36
   },
   "suspension": {
     "useCustomSlidingRotationalSpeed": true,
@@ -37,7 +37,7 @@
     "dampingCompression": 4.2,
     "dampingRelaxation": 3.4,
     "rollInfluence": 0.8,
-    "frictionSlip": 1.35
+    "frictionSlip": 1.38
   },
   "tyre": {
     "friction": 2.5
