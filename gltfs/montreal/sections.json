@@ -1,0 +1,32 @@
+[
+  {
+    "in": 0.071,
+    "out": 0.100,
+    "isTunnel": false,
+    "text": "Virage Senna"
+  },
+  {
+    "in": 0.596,
+    "out": 0.651,
+    "isTunnel": false,
+    "text": "Epingle"
+  },
+  {
+    "in": 0.677,
+    "out": 0.857,
+    "isTunnel": false,
+    "text": "Droit Du Casino"
+  },
+  {
+    "in": 0.883,
+    "out": 0.915,
+    "isTunnel": false,
+    "text": "Wall Of Champions"
+  },
+  {
+    "in": 0.975,
+    "out": 0.999,
+    "isTunnel": false,
+    "text": "Start/Finish"
+  }
+]
