@@ -1,0 +1,216 @@
+{
+  "$schema": "../../packages/loader/schema.json",
+  "inputs": {
+    "tyre": "hard"
+  },
+  "steps": [
+    {
+      "id": "physics",
+      "type": "asset",
+      "loader": "gltf",
+      "dependsOn": [],
+      "source": {
+        "kind": "static",
+        "path": "/assets/vehicle/physics.glb"
+      }
+    },
+    {
+      "id": "graphics",
+      "type": "asset",
+      "loader": "gltf",
+      "dependsOn": [],
+      "source": {
+        "kind": "static",
+        "path": "/assets/vehicle/graphics.gltf"
+      }
+    },
+    {
+      "id": "font",
+      "type": "asset",
+      "loader": "font",
+      "dependsOn": [],
+      "source": {
+        "kind": "static",
+        "path": "/assets/fonts/exo-2/bold_regular.json"
+      }
+    },
+    {
+      "id": "bodyBrake",
+      "type": "asset",
+      "loader": "audio",
+      "dependsOn": [],
+      "source": {
+        "kind": "static",
+        "path": "/assets/audios/body/brake.ogg"
+      }
+    },
+    {
+      "id": "hitCarbon",
+      "type": "asset",
+      "loader": "audio",
+      "dependsOn": [],
+      "source": {
+        "kind": "static",
+        "path": "/assets/audios/hit/carbon.ogg"
+      }
+    },
+    {
+      "id": "bodyRubber",
+      "type": "asset",
+      "loader": "audio",
+      "dependsOn": [],
+      "source": {
+        "kind": "static",
+        "path": "/assets/audios/body/rubber.ogg"
+      }
+    },
+    {
+      "id": "bodyScrape",
+      "type": "asset",
+      "loader": "audio",
+      "dependsOn": [],
+      "source": {
+        "kind": "static",
+        "path": "/assets/audios/body/scrape.ogg"
+      }
+    },
+    {
+      "id": "bodyWork",
+      "type": "asset",
+      "loader": "audio",
+      "dependsOn": [],
+      "source": {
+        "kind": "static",
+        "path": "/assets/audios/body/work.ogg"
+      }
+    },
+    {
+      "id": "engineIdle",
+      "type": "asset",
+      "loader": "audio",
+      "dependsOn": [],
+      "source": {
+        "kind": "static",
+        "path": "/assets/audios/engine/idle.ogg"
+      }
+    },
+    {
+      "id": "engineOffLeft",
+      "type": "asset",
+      "loader": "audio",
+      "dependsOn": [],
+      "source": {
+        "kind": "static",
+        "path": "/assets/audios/engine/off-left.ogg"
+      }
+    },
+    {
+      "id": "engineOffRight",
+      "type": "asset",
+      "loader": "audio",
+      "dependsOn": [],
+      "source": {
+        "kind": "static",
+        "path": "/assets/audios/engine/off-right.ogg"
+      }
+    },
+    {
+      "id": "engineOnLeft",
+      "type": "asset",
+      "loader": "audio",
+      "dependsOn": [],
+      "source": {
+        "kind": "static",
+        "path": "/assets/audios/engine/on-left.ogg"
+      }
+    },
+    {
+      "id": "engineOnRight",
+      "type": "asset",
+      "loader": "audio",
+      "dependsOn": [],
+      "source": {
+        "kind": "static",
+        "path": "/assets/audios/engine/on-right.ogg"
+      }
+    },
+    {
+      "id": "transmissionUpshift",
+      "type": "asset",
+      "loader": "audio",
+      "dependsOn": [],
+      "source": {
+        "kind": "static",
+        "path": "/assets/audios/transmission/upshift.ogg"
+      }
+    },
+    {
+      "id": "transmissionWhine",
+      "type": "asset",
+      "loader": "audio",
+      "dependsOn": [],
+      "source": {
+        "kind": "static",
+        "path": "/assets/audios/transmission/whine.ogg"
+      }
+    },
+    {
+      "id": "wheelGrass",
+      "type": "asset",
+      "loader": "audio",
+      "dependsOn": [],
+      "source": {
+        "kind": "static",
+        "path": "/assets/audios/wheel/grass.ogg"
+      }
+    },
+    {
+      "id": "wheelGravel",
+      "type": "asset",
+      "loader": "audio",
+      "dependsOn": [],
+      "source": {
+        "kind": "static",
+        "path": "/assets/audios/wheel/gravel.ogg"
+      }
+    },
+    {
+      "id": "wheelKerb",
+      "type": "asset",
+      "loader": "audio",
+      "dependsOn": [],
+      "source": {
+        "kind": "static",
+        "path": "/assets/audios/wheel/kerb.ogg"
+      }
+    },
+    {
+      "id": "wheelSand",
+      "type": "asset",
+      "loader": "audio",
+      "dependsOn": [],
+      "source": {
+        "kind": "static",
+        "path": "/assets/audios/wheel/sand.ogg"
+      }
+    },
+    {
+      "id": "wheelSkid",
+      "type": "asset",
+      "loader": "audio",
+      "dependsOn": [],
+      "source": {
+        "kind": "static",
+        "path": "/assets/audios/wheel/skid.ogg"
+      }
+    },
+    {
+      "id": "config",
+      "type": "data",
+      "source": {
+        "kind": "rest",
+        "url": "/assets/vehicle/config.json"
+      }
+    }
+  ]
+}
