@@ -1,0 +1,46 @@
+{
+  "$schema": "../../../packages/data-loaders/schema.json",
+  "inputs": {
+    "resolution": "4k"
+  },
+  "steps": [
+    {
+      "id": "physics",
+      "type": "asset",
+      "loader": "gltf",
+      "source": {
+        "kind": "static",
+        "path": "/assets/circuit/nords/physics.glb"
+      }
+    },
+    {
+      "id": "graphics",
+      "type": "asset",
+      "loader": "gltf",
+      "source": {
+        "kind": "static",
+        "path": "/assets/circuit/nords/graphics.gltf"
+      }
+    },
+    {
+      "id": "env",
+      "type": "asset",
+      "loader": "hdr",
+      "source": {
+        "kind": "static",
+        "path": "/assets/circuit/nords/envs/{{inputs.resolution}}.hdr"
+      },
+      "hdr": {
+        "mapping": 303
+      }
+    },
+    {
+      "id": "racingLine",
+      "type": "data",
+      "source": {
+        "kind": "rest",
+        "url": "/assets/circuit/nords/limits.json"
+      }
+    }
+  ]
+}

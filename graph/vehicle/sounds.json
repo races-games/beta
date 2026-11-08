@@ -1,0 +1,249 @@
+{
+  "$schema": "../../../packages/data-loaders/schema.json",
+  "inputs": {},
+  "steps": [
+    {
+      "id": "very_low_off",
+      "type": "asset",
+      "loader": "audio",
+      "source": {
+        "kind": "static",
+        "path": "/assets/sounds/very_low_off.flac"
+      }
+    },
+    {
+      "id": "idle",
+      "type": "asset",
+      "loader": "audio",
+      "source": {
+        "kind": "static",
+        "path": "/assets/sounds/idle.flac"
+      }
+    },
+    {
+      "id": "low-on",
+      "type": "asset",
+      "loader": "audio",
+      "source": {
+        "kind": "static",
+        "path": "/assets/sounds/low-on.flac"
+      }
+    },
+    {
+      "id": "low-off",
+      "type": "asset",
+      "loader": "audio",
+      "source": {
+        "kind": "static",
+        "path": "/assets/sounds/low-off.flac"
+      }
+    },
+    {
+      "id": "med-on",
+      "type": "asset",
+      "loader": "audio",
+      "source": {
+        "kind": "static",
+        "path": "/assets/sounds/med-on.flac"
+      }
+    },
+    {
+      "id": "med-off",
+      "type": "asset",
+      "loader": "audio",
+      "source": {
+        "kind": "static",
+        "path": "/assets/sounds/med-off.flac"
+      }
+    },
+    {
+      "id": "hi-on",
+      "type": "asset",
+      "loader": "audio",
+      "source": {
+        "kind": "static",
+        "path": "/assets/sounds/hi-on.flac"
+      }
+    },
+    {
+      "id": "hi-off",
+      "type": "asset",
+      "loader": "audio",
+      "source": {
+        "kind": "static",
+        "path": "/assets/sounds/hi-off.flac"
+      }
+    },
+    {
+      "id": "max-on",
+      "type": "asset",
+      "loader": "audio",
+      "source": {
+        "kind": "static",
+        "path": "/assets/sounds/max-on.flac"
+      }
+    },
+    {
+      "id": "max",
+      "type": "asset",
+      "loader": "audio",
+      "source": {
+        "kind": "static",
+        "path": "/assets/sounds/max.flac"
+      }
+    },
+    {
+      "id": "transmission",
+      "type": "asset",
+      "loader": "audio",
+      "source": {
+        "kind": "static",
+        "path": "/assets/sounds/transmission.flac"
+      }
+    },
+    {
+      "id": "traction_control",
+      "type": "asset",
+      "loader": "audio",
+      "source": {
+        "kind": "static",
+        "path": "/assets/sounds/traction_control.flac"
+      }
+    },
+    {
+      "id": "wind",
+      "type": "asset",
+      "loader": "audio",
+      "source": {
+        "kind": "static",
+        "path": "/assets/sounds/wind.flac"
+      }
+    },
+    {
+      "id": "bodywork__left",
+      "type": "asset",
+      "loader": "audio",
+      "source": {
+        "kind": "static",
+        "path": "/assets/sounds/bodywork__left.flac"
+      }
+    },
+    {
+      "id": "bodywork__right",
+      "type": "asset",
+      "loader": "audio",
+      "source": {
+        "kind": "static",
+        "path": "/assets/sounds/bodywork__right.flac"
+      }
+    },
+    {
+      "id": "skid",
+      "type": "asset",
+      "loader": "audio",
+      "source": {
+        "kind": "static",
+        "path": "/assets/sounds/skid.flac"
+      }
+    },
+    {
+      "id": "gearup",
+      "type": "asset",
+      "loader": "audio",
+      "source": {
+        "kind": "static",
+        "path": "/assets/sounds/gearup.flac"
+      }
+    },
+    {
+      "id": "missgear",
+      "type": "asset",
+      "loader": "audio",
+      "source": {
+        "kind": "static",
+        "path": "/assets/sounds/missgear.flac"
+      }
+    },
+    {
+      "id": "500_backfire3",
+      "type": "asset",
+      "loader": "audio",
+      "source": {
+        "kind": "static",
+        "path": "/assets/sounds/500_backfire3.flac"
+      }
+    },
+    {
+      "id": "500_backfire4",
+      "type": "asset",
+      "loader": "audio",
+      "source": {
+        "kind": "static",
+        "path": "/assets/sounds/500_backfire4.flac"
+      }
+    },
+    {
+      "id": "500_backfire5",
+      "type": "asset",
+      "loader": "audio",
+      "source": {
+        "kind": "static",
+        "path": "/assets/sounds/500_backfire5.flac"
+      }
+    },
+    {
+      "id": "500_backfire6",
+      "type": "asset",
+      "loader": "audio",
+      "source": {
+        "kind": "static",
+        "path": "/assets/sounds/500_backfire6.flac"
+      }
+    },
+    {
+      "id": "500_backfire7",
+      "type": "asset",
+      "loader": "audio",
+      "source": {
+        "kind": "static",
+        "path": "/assets/sounds/500_backfire7.flac"
+      }
+    },
+    {
+      "id": "kerb__left",
+      "type": "asset",
+      "loader": "audio",
+      "source": {
+        "kind": "static",
+        "path": "/assets/sounds/kerb__left.flac"
+      }
+    },
+    {
+      "id": "kerb__right",
+      "type": "asset",
+      "loader": "audio",
+      "source": {
+        "kind": "static",
+        "path": "/assets/sounds/kerb__right.flac"
+      }
+    },
+    {
+      "id": "grass__left",
+      "type": "asset",
+      "loader": "audio",
+      "source": {
+        "kind": "static",
+        "path": "/assets/sounds/grass__left.flac"
+      }
+    },
+    {
+      "id": "grass__right",
+      "type": "asset",
+      "loader": "audio",
+      "source": {
+        "kind": "static",
+        "path": "/assets/sounds/grass__right.flac"
+      }
+    }
+  ]
+}

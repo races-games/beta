@@ -1,0 +1,46 @@
+{
+  "$schema": "../../../packages/data-loaders/schema.json",
+  "inputs": {
+    "resolution": "4k"
+  },
+  "steps": [
+    {
+      "id": "physics",
+      "type": "asset",
+      "loader": "gltf",
+      "source": {
+        "kind": "static",
+        "path": "/assets/circuit/monaco/physics.glb"
+      }
+    },
+    {
+      "id": "graphics",
+      "type": "asset",
+      "loader": "gltf",
+      "source": {
+        "kind": "static",
+        "path": "/assets/circuit/monaco/graphics.gltf"
+      }
+    },
+    {
+      "id": "env",
+      "type": "asset",
+      "loader": "hdr",
+      "source": {
+        "kind": "static",
+        "path": "/assets/circuit/monaco/envs/{{inputs.resolution}}.hdr"
+      },
+      "hdr": {
+        "mapping": 303
+      }
+    },
+    {
+      "id": "racingLine",
+      "type": "data",
+      "source": {
+        "kind": "rest",
+        "url": "/assets/circuit/monaco/limits.json"
+      }
+    }
+  ]
+}

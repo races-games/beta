@@ -1,0 +1,24 @@
+{
+  "$schema": "../../../packages/data-loaders/schema.json",
+  "inputs": {},
+  "steps": [
+    {
+      "id": "graphics",
+      "type": "asset",
+      "loader": "gltf",
+      "source": {
+        "kind": "static",
+        "path": "/assets/vehicles/oldschool/graphics.glb"
+      }
+    },
+    {
+      "id": "physics",
+      "type": "asset",
+      "loader": "gltf",
+      "source": {
+        "kind": "static",
+        "path": "/assets/vehicles/oldschool/physics.glb"
+      }
+    }
+  ]
+}

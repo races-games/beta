@@ -1,48 +1,25 @@
 {
-  "$schema": "../../packages/loader/schema.json",
+  "$schema": "../../packages/data-loaders/schema.json",
   "inputs": {
-    "name": "marina-bay",
-    "weather": "night",
-    "quality": "4k"
+    "name": "nurburgring"
   },
   "steps": [
-    {
-      "id": "physics",
-      "type": "asset",
-      "loader": "gltf",
-      "dependsOn": [],
-      "source": {
-        "kind": "static",
-        "path": "/assets/{{inputs.name}}/physics.glb"
-      }
-    },
-    {
-      "id": "layout",
-      "type": "asset",
-      "loader": "gltf",
-      "dependsOn": [],
-      "source": {
-        "kind": "static",
-        "path": "/assets/{{inputs.name}}/layout.glb"
-      }
-    },
     {
       "id": "graphics",
       "type": "asset",
       "loader": "gltf",
-      "dependsOn": [],
       "source": {
         "kind": "static",
-        "path": "/assets/{{inputs.name}}/graphics.gltf"
+        "path": "/assets/circuits/{{inputs.name}}/graphics.glb"
       }
     },
     {
-      "id": "sky",
+      "id": "physics",
       "type": "asset",
-      "loader": "hdr",
+      "loader": "gltf",
       "source": {
         "kind": "static",
-        "path": "/assets/hdrs/{{inputs.weather}}/{{inputs.quality}}.hdr"
+        "path": "/assets/circuits/{{inputs.name}}/physics.glb"
       }
     },
     {
@@ -50,39 +27,7 @@
       "type": "data",
       "source": {
         "kind": "rest",
-        "url": "/assets/{{inputs.name}}/racing-line.json"
-      }
-    },
-    {
-      "id": "lighting",
-      "type": "data",
-      "source": {
-        "kind": "rest",
-        "url": "/assets/{{inputs.name}}/lighting.json"
-      }
-    },
-    {
-      "id": "drsZones",
-      "type": "data",
-      "source": {
-        "kind": "rest",
-        "url": "/assets/{{inputs.name}}/drs-zones.json"
-      }
-    },
-    {
-      "id": "sections",
-      "type": "data",
-      "source": {
-        "kind": "rest",
-        "url": "/assets/{{inputs.name}}/sections.json"
-      }
-    },
-    {
-      "id": "downsampleFactor",
-      "type": "data",
-      "source": {
-        "kind": "static",
-        "data": 8
+        "url": "/assets/circuits/{{inputs.name}}/curves.json"
       }
     }
   ]
